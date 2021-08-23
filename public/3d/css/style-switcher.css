@@ -1,0 +1,84 @@
+@import url(skins/color.css);
+.style-switcher {
+  position: absolute;
+  right: 0;
+  margin-top: 250px;
+  top: 100px;
+  padding: 15px;
+  width: 200px;
+  z-index: 101;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  transform: translateX(100%);
+}
+
+.style-switcher.open {
+  transform: translateX(-15px);
+}
+
+.style-switcher .s-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: var(--text-black-900);
+  right: 100%;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.style-switcher .s-icon::after {
+  border-radius: 50%;
+}
+
+.style-switcher .s-icon i {
+  line-height: 40px;
+}
+
+.style-switcher .style-switcher-toggle {
+  border-radius: 50%;
+  top: 0;
+}
+.style-switcher .day-night {
+  top: 60px;
+}
+
+.style-switcher h4 {
+  margin: 0 0 10px;
+  color: var(--text-black-700);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.style-switcher .colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.style-switcher .colors span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.style-switcher .color-1 {
+  background-color: #a55eea;
+}
+.style-switcher .color-2 {
+  background-color: var(--skin-color2);
+}
+.style-switcher .color-3 {
+  background-color: var(--skin-color3);
+}
+.style-switcher .color-4 {
+  background-color: var(--skin-color4);
+}
+.style-switcher .color-5 {
+  background-color: var(--skin-color5);
+}
