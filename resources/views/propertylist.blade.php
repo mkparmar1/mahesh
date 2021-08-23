@@ -23,7 +23,7 @@
                                     <span class="pull-left"><b>Built In :</b> {{$i->pbuilt}}</span>
                                     <span class="proerty-price pull-right">₹ {{$i->pprice}}</span>
 
-                                    <span class="pull-left"><b>Property Status :</b> {{$i->pstatus}}</span>
+                                    <span class="pull-left"><b>Property Status:</b> {{$i->pstatus}}</span>
                                 </div>
                             </div>
                         </div>
