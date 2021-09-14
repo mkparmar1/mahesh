@@ -46,16 +46,16 @@
                                                     <hr>
                                                     <div class="picture">
                                                         <label>Property Photo-1 <small>(required)</small></label>
-                                                        <input type="file" id="wizard-picture" name="pics1" >
+                                                        <input required type="file" id="wizard-picture" name="pics1" >
                                                     </div><br><hr>
                                                     <div class="picture">
                                                         <label>Property Photo-2 <small>(required)</small></label>
-                                                        <input type="file" id="wizard-picture"  name="pics2">
+                                                        <input required type="file" id="wizard-picture"  name="pics2">
                                                     </div>
                                                     <br><hr>
                                                     <div class="picture">
                                                         <label>Property Photo-3 <small>(required)</small></label>
-                                                        <input type="file" id="wizard-picture"  name="pics3">
+                                                        <input required type="file" id="wizard-picture"  name="pics3">
                                                     </div>
                                                     <hr>
                                                 </div>
@@ -63,24 +63,24 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label>Property name <small>(required)</small></label>
-                                                    <input name="pname" value="" type="text" class="form-control" placeholder="Super villa ...">
+                                                    <input required name="pname" value="" type="text" class="form-control" placeholder="Super villa ...">
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label>Property price <small>(required)</small></label>
-                                                    <input name="pprice" type="text" class="form-control" placeholder="3330000">
+                                                    <input required name="pprice" type="text" class="form-control" placeholder="3330000">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Built In <small>(For Ex. 1990/2010/2020)</small></label>
-                                                    <input name="pbuilt" type="text" class="form-control" placeholder="(For Ex. 1990/2010/2020)">
+                                                    <label>Built In Year <small>(For Ex. 1990/2010/2020)</small></label>
+                                                    <input required name="pbuilt" type="text" class="form-control" placeholder="(For Ex. 1990/2010/2020)">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Telephone <small>(empty if you wanna use default phone number)</small></label>
-                                                    <input name="phone2" type="text" class="form-control" value="{{ Auth::user()->phone }}">
+                                                    <input required name="phone2" type="text" class="form-control" value="{{ Auth::user()->phone }}">
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Email</label>
-                                                    <input name="email" type="text" class="form-control" readonly value="{{ Auth::user()->email }}">
+                                                    <input required name="email" type="text" class="form-control" readonly value="{{ Auth::user()->email }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -94,7 +94,7 @@
                                                 <div class="col-sm-12">
                                                     <div class="form-group">
                                                         <label>Property Description :</label>
-                                                        <textarea name="pdesc" placeholder="BEAUTIFUL PROPERTY WITH AMAZING SERENITY" class="form-control" ></textarea>
+                                                        <textarea required name="pdesc" placeholder="BEAUTIFUL PROPERTY WITH AMAZING SERENITY" class="form-control" ></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -103,7 +103,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Country  :</label>
-                                                        <select name="country" id="basic" class="selectpicker show-tick form-control">
+                                                        <select required name="country" id="basic" class="selectpicker show-tick form-control">
                                                             <option> -Status- </option>
                                                             <option value="India" id="India" selected>India </option>
 
@@ -113,7 +113,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Property State :</label>
-                                                        <select name="state" id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
+                                                        <select required name="state" id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
                                                             <option value="Gujrat" id="Gujrat" selected>Gujrat</option>
                                                         </select>
                                                     </div>
@@ -121,7 +121,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Property City :</label>
-                                                        <select name="city" id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
+                                                        <select required name="city" id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
                                                             <option  selected>Junagadh</option>
                                                             <option >Rajkot</option>
                                                             <option >Ahemdabad</option>
@@ -135,7 +135,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>STOREROOMS</label>
-                                                        <select name="storeroom" id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
+                                                        <select required name="storeroom" id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
                                                             <option selected>None</option>
                                                             <option >1</option>
                                                             <option >2</option>
@@ -157,7 +157,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>BEDROOMS</label>
-                                                        <select id="lunchBegins" name="bedroom" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
+                                                        <select required id="lunchBegins" name="bedroom" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
                                                             <option selected>1</option>
                                                             <option >2</option>
                                                             <option >3</option>
@@ -175,7 +175,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>BATHROOMS</label>
-                                                        <select id="lunchBegins" name="bathroom" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
+                                                        <select required id="lunchBegins" name="bathroom" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
                                                             <option selected>1</option>
                                                             <option >2</option>
                                                             <option >3</option>
@@ -193,7 +193,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Parking  :</label>
-                                                        <select id="basic" name="parking" class="selectpicker show-tick form-control">
+                                                        <select required id="basic" name="parking" class="selectpicker show-tick form-control">
                                                           <option selected>None </option>
                                                             <option >Bike</option>
                                                             <option >Cars</option>
@@ -204,7 +204,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Ac/Non :</label>
-                                                        <select id="basic" name="ac" class="selectpicker show-tick form-control">
+                                                        <select required id="basic" name="ac" class="selectpicker show-tick form-control">
                                                             <option selected>AC </option>
                                                             <option >Non-AC</option>
                                                         </select>
@@ -215,7 +215,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Kitchen</label>
-                                                        <select name="kitchen" id="lunchBegins" class="selectpicker"  data-live-search-style="begins" title="Select your city">
+                                                        <select required name="kitchen" id="lunchBegins" class="selectpicker"  data-live-search-style="begins" title="Select your city">
                                                             <option selected>Yes</option>
                                                             <option >No</option>
                                                         </select>
@@ -224,7 +224,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Garden</label>
-                                                        <select name="garden" id="lunchBegins" class="selectpicker"  data-live-search-style="begins" title="Select your city">
+                                                        <select required name="garden" id="lunchBegins" class="selectpicker"  data-live-search-style="begins" title="Select your city">
                                                             <option >Yes</option>
                                                             <option selected>No</option>
                                                         </select>
@@ -233,7 +233,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Swimming Pool</label>
-                                                        <select id="lunchBegins" name="spool" class="selectpicker"  data-live-search-style="begins" title="Select your city">
+                                                        <select required id="lunchBegins" name="spool" class="selectpicker"  data-live-search-style="begins" title="Select your city">
                                                             <option >Yes</option>
                                                             <option selected>No</option>
                                                         </select>
@@ -242,7 +242,7 @@
                                                 <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Garages</label>
-                                                        <select id="lunchBegins" name="garages" class="selectpicker" data-live-search-style="begins" title="Select your city">
+                                                        <select required id="lunchBegins" name="garages" class="selectpicker" data-live-search-style="begins" title="Select your city">
                                                             <option >Yes</option>
                                                             <option selected>No</option>
                                                         </select>
@@ -261,7 +261,7 @@
                                             <div class="col-sm-3">
                                                 <div class="form-group">
                                                     <label>Property Statue  :</label>
-                                                    <select id="basic" name="pstatus" class="selectpicker show-tick form-control">
+                                                    <select id="basic" required name="pstatus" class="selectpicker show-tick form-control">
                                                         <option >Rent </option>
                                                         <option selected>Sell</option>
                                                     </select>
@@ -288,7 +288,7 @@
 
                                                     <div class="checkbox">
                                                         <label>
-                                                            <input name="termes" type="checkbox" /> <strong>Accept termes and conditions.</strong>
+                                                            <input name="termes" required type="checkbox" /> <strong>Accept termes and conditions.</strong>
                                                         </label>
                                                     </div>
 

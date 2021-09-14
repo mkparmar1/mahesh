@@ -48,22 +48,21 @@
                                             {{ session('status') }}
                                         </div>
                                     @endif
-                                    <form class="user" method="POST" action="{{ route('password.email') }}">
+                                    <form class="user" method="POST" action="{{'forgotpass'}}">
                                         @csrf
                                         <div class="form-group">
                                             <input id="email" type="email"
                                                 class="form-control form-control-user @error('email') is-invalid @enderror"
                                                 name="email" value="{{ old('email') }}" required autocomplete="email"
-                                                autofocus placeholder="Enter Email Address..."> @error('email')
+                                                autofocus placeholder="Enter Email Address"> @error('email')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
-                                            @enderror
-
+                                            @enderror<br>
 
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
-                                            {{ __('Send Password Reset Link') }}
+                                            {{ __('Submit') }}
                                         </button>
                                     </form>
                                     <hr>

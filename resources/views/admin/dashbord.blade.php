@@ -15,7 +15,7 @@
       <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
         <div class="card">
           <div class="card-body p-3">
-            <div class="row">
+            <a href="{{url('adminuserpro')}}"><div class="row">
               <div class="col-8">
                 <div class="numbers">
                   <p class="text-sm mb-0 text-capitalize font-weight-bold">Properties</p>
@@ -30,14 +30,14 @@
                   <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
         </div>
       </div>
       <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
         <div class="card">
           <div class="card-body p-3">
-            <div class="row">
+            <a href="{{url('dashbord')}}"><div class="row">
               <div class="col-8">
                 <div class="numbers">
                   <p class="text-sm mb-0 text-capitalize font-weight-bold">Clients</p>
@@ -52,14 +52,14 @@
                   <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
         </div>
       </div>
       <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
         <div class="card">
           <div class="card-body p-3">
-            <div class="row">
+            <a href="{{url('admincontact')}}"><div class="row">
               <div class="col-8">
                 <div class="numbers">
                   <p class="text-sm mb-0 text-capitalize font-weight-bold">Contact</p>
@@ -74,14 +74,14 @@
                   <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
         </div>
       </div>
       <div class="col-xl-3 col-sm-6">
         <div class="card">
           <div class="card-body p-3">
-            <div class="row">
+            <a href="{{url('admincomment')}}"><div class="row">
               <div class="col-8">
                 <div class="numbers">
                   <p class="text-sm mb-0 text-capitalize font-weight-bold">Comment</p>
@@ -96,7 +96,7 @@
                   <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
                 </div>
               </div>
-            </div>
+            </div></a>
           </div>
         </div>
       </div>

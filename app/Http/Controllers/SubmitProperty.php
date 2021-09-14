@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\SubmitPro;
 use App\UComment;
 use App\User;
-use App\Watchlist;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Crypt;
 use Image;
@@ -27,6 +26,12 @@ class SubmitProperty extends Controller
     }
     public function pstore(Request $request)
     {
+        $this->validate($request, [
+            'pics1' => 'required',
+            'pics2' => 'required',
+            'pics3' => 'required',
+        ]);
+
         $user=new SubmitPro();
         if ($request->hasFile('pics1')) {
             $pics1 = $request->file('pics1');
@@ -109,6 +114,7 @@ class SubmitProperty extends Controller
     }
     public function update1(Request $request)
     {
+
             $user=SubmitPro::find($request->id);
             print_r($request->input());
             if ($request->hasFile('pics1')) {

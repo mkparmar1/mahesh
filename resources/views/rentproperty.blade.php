@@ -44,7 +44,7 @@
                                         <div class="item-entry overflow">
                                             <h5><a href="{{url('SubmitProshow')}}/{{\Crypt::encrypt($i->id)}}"> {{$i->pname}} </a></h5>
                                             <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Built In :</b> {{$i->pbuilt}} </span>
+                                            <span class="pull-left"><b> Built In Year:</b> {{$i->pbuilt}} </span>
                                             <span class="proerty-price pull-right"> ₹ {{$i->pprice}}</span>
                                             <p style="display: none;">{{$i->pdesc}}</p>
                                             <div class="property-icon">

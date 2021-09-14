@@ -45,7 +45,7 @@
                                         <div class="item-entry overflow">
                                             <h5><a href="detailsproperty"> {{$i->pname}}{{$i->id}} </a></h5>
                                             <div class="dot-hr"></div>
-                                            <span class="pull-left"><b> Built In :</b> {{$i->pbuilt}} </span>
+                                            <span class="pull-left"><b> Built In Year:</b> {{$i->pbuilt}} </span>
                                             <span class="proerty-price pull-right"> ₹ {{$i->pprice}}</span>
                                             <p style="display: none;">Suspendisse ultricies Suspendisse ultricies Nulla quis dapibus nisl. Suspendisse ultricies commodo arcu nec pretium ...</p>
                                             <div class="property-icon">

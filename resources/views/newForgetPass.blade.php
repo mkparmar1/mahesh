@@ -53,8 +53,8 @@
                                         <div class="form-group">
                                             <input id="userid" type="text"
                                                 class="form-control form-control-user @error('userid') is-invalid @enderror"
-                                                name="userid" value="{{ old('userid') }}" required autocomplete="userid"
-                                                autofocus placeholder="Enter Your Userid..."> @error('userid')
+                                                name="userid" value="{{ old('userid') }}" required
+                                                placeholder="Enter Your Userid..."> @error('userid')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
@@ -65,7 +65,7 @@
                                         <div class="form-group">
                                             <input id="password" type="password"
                                                 class="form-control form-control-user @error('password') is-invalid @enderror"
-                                                name="password" value="{{ old('password') }}" required autocomplete="password"
+                                                name="password" value="{{ old('password') }}" required
                                                 autofocus placeholder="Enter Your Password..."> @error('password')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -75,10 +75,10 @@
 
                                         </div>
                                         <div class="form-group">
-                                            <input id="cpassword" type="text"
+                                            <input id="cpassword" type="password"
                                                 class="form-control form-control-user @error('cpassword') is-invalid @enderror"
-                                                name="cpassword" value="{{ old('cpassword') }}" required autocomplete="cpassword"
-                                                autofocus placeholder="Enter Your Confirm Passwprd..."> @error('cpassword')
+                                                name="cpassword" value="{{ old('cpassword') }}" required
+                                                placeholder="Enter Your Confirm Passwprd..."> @error('cpassword')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
@@ -87,7 +87,7 @@
 
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
-                                            {{ __('Send Password Reset Link') }}
+                                            {{ __('Change Password') }}
                                         </button>
                                     </form>
                                     <hr>
